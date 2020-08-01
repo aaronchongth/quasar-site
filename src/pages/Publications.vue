@@ -26,7 +26,6 @@
       :width="240"
       :breakpoint="500"
       show-if-above
-      class="mobile-hide"
     >
       <div 
         class="flex flex-center">
