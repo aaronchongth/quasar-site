@@ -3,6 +3,7 @@
 
     <div class="q-pa-md">
       <q-avatar
+        v-model="home"
         size="250px">
         <img src="~assets/bw.jpg">
       </q-avatar>
@@ -37,11 +38,40 @@
       Right now, I am having fun with the <span><a href="https://quasar.dev/">Quasar Framework</a></span>.
     </div>
 
+    <div
+      class="q-pa-md desktop-only">
+      <q-btn-group push>
+        <q-btn 
+          push
+          dense
+          label="Home" 
+          icon="home"
+          class="q-px-md"
+          :to="'/'"
+        />
+        <q-btn
+          push
+          dense
+          label="Publications"
+          icon="book"
+          @click=""
+          class="q-px-md"
+          :to="'/publications'"
+        />
+      </q-btn-group>
+    </div>
+
   </q-page>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data() {
+    return {
+      home: true,
+      drawer: false
+    }
+  }
 }
 </script>
