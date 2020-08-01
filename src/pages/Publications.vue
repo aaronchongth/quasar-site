@@ -11,6 +11,13 @@
           dense
           icon="menu"
         />
+        <q-btn
+          flat
+          round
+          dense
+          icon="home"
+          :to="'/'"
+        />
       </q-toolbar>
     </q-header>
 

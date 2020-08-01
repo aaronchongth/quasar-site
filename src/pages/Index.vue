@@ -48,26 +48,15 @@
     </div>
 
     <div
-      class="q-pa-md desktop-only">
-      <q-btn-group push>
-        <q-btn 
-          push
-          dense
-          label="Home" 
-          icon="home"
-          class="q-px-md"
-          :to="'/'"
-        />
-        <q-btn
-          push
-          dense
-          label="Publications"
-          icon="book"
-          @click=""
-          class="q-px-md"
-          :to="'/publications'"
-        />
-      </q-btn-group>
+      class="q-pa-md text-center">
+      <q-btn
+        flat
+        dense
+        label="Publications"
+        icon="book"
+        class="q-px-sm"
+        :to="'/publications'"
+      />
     </div>
 
   </q-page>
