@@ -28,6 +28,15 @@
         target="__blank_linkedin">
         <i class="fab fa-linkedin fa-3x"></i>
       </q-btn>
+      <q-btn
+        flat
+        dense
+        class="q-pa-xs"
+        type="a"
+        href="https://scholar.google.com/citations?user=ueV22wEAAAAJ&hl=en&oi=ao"
+        target="__blank_google_scholar">
+        <i class="ai ai-google-scholar-square ai-3x"></i>
+      </q-btn>
     </div>
 
     <div
