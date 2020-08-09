@@ -12,7 +12,6 @@ npm install
 quasar dev
 ```
 
-
 ### Build the app for production
 ```bash
 quasar build
@@ -20,3 +19,8 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
+
+### Serving from github
+
+Copy the contents of `dist/spa` into your hosting repository and make the necessary changes to icons and titles.
