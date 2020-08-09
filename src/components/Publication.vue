@@ -6,7 +6,7 @@
     class="q-pa-md q-ma-sm col-12 col-lg-5"
   >
     <img 
-      :src="require(`@/assets/${img_file}`)"
+      :src="resolve_img_url(img_file)"
     >
 
     <q-card-section>
@@ -87,6 +87,12 @@ export default {
   data() {
     return {
       expanded: false
+    }
+  },
+  methods: {
+    resolve_img_url: function (path) {
+      let images = require.context('../assets/', false, /\.png$|\.jpg$/)
+      return images("./"+path)
     }
   }
 }
