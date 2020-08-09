@@ -40,15 +40,15 @@
     </div>
 
     <div
-      class="q-pa-md text-subtitle1 text-center">
-      Hello there! My name is Aaron, and I am a software engineer at the <span><a href="https://www.openrobotics.org/">Open Source Robotics Foundation</a></span>.</br>
-      I am very fond of topics in math, computer science, machine learning & vision, especially in the field of robotics.</br>
-      In my free time, I like to build and learn new things, read books, or play volleyball.</br>
-      Right now, I am having fun with the <span><a href="https://quasar.dev/">Quasar Framework</a></span>.
-    </div>
-
-    <div
       class="q-pa-md text-center">
+      <q-btn
+        flat
+        dense
+        label="About Me"
+        icon="account_box"
+        class="q-px-sm"
+        :to="'/about-me'"
+      />
       <q-btn
         flat
         dense
