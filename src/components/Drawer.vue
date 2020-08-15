@@ -73,7 +73,7 @@
       </div>
 
       <q-scroll-area 
-        style="height: 150px;"
+        style="height: 400px;"
         class="q-pa-md">
         <q-list>
 
