@@ -45,7 +45,7 @@
         flat
         dense
         label="About Me"
-        icon="account_box"
+        icon="face"
         class="q-px-sm"
         :to="'/about-me'"
       />
@@ -56,6 +56,15 @@
         icon="book"
         class="q-px-sm"
         :to="'/publications'"
+      />
+      <q-btn
+        flat
+        dense
+        type="a"
+        href="https://drive.google.com/file/d/1GTmBF1GmQq3TjI7tkadAKFNRRj3TjRjV/view?usp=sharing"
+        target="__blank_resume"
+        label="Resume"
+        icon="account_box"
       />
     </div>
 
