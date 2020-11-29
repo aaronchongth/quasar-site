@@ -15,7 +15,7 @@
         class="q-pa-md text-subtitle1 text-center">
         Hello there! My name is Aaron, and I am a software engineer at the <span><a href="https://www.openrobotics.org/">Open Source Robotics Foundation</a></span>.</br>
         I am very fond of topics in math, computer science, machine learning & vision, especially in the field of robotics.</br>
-        In my free time, I like to build and learn new things, read books, or play volleyball.</br>
+        In my free time, I like to build and learn new things, read books, climb, or play volleyball.</br>
         Right now, I am having fun with the <span><a href="https://quasar.dev/">Quasar Framework</a></span>.
       </div>
 
@@ -65,6 +65,32 @@
           </q-list>
         </div>
 
+        <!-- <div class="q-pa-md column inline" style="max-width: 300px">
+          <q-list bordered padding>
+            <q-item>
+              <q-item-section>
+                <q-item-label overline>RECENT HAIKUS I WROTE</q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-separator />
+
+            <q-item
+              v-for="(haiku, $index) in haikus"
+              :key="$index"
+            >
+              <q-item-label caption>
+                {{ haiku.verse_1 }}
+                <br/>
+                {{ haiku.verse_2 }}
+                <br/>
+                {{ haiku.verse_3 }}
+              </q-item-label>
+            </q-item>
+
+          </q-list>
+        </div> -->
+
       </div>
       
     </div>
@@ -82,15 +108,19 @@ export default {
       analytical_design_expanded: false,
       current_reading:  [
         {
-          name: 'The Alchemist',
-          author: 'Paulo Coelho'
-        },
-        {
           name: '12 Rules for Life',
           author: 'Jordan B. Peterson'
+        },
+        {
+          name: 'The Gulag Archipelago',
+          author: 'Aleksandr Solzhenitsyn'
         }
       ],
       books: [
+        {
+          name: 'The Alchemist',
+          author: 'Paulo Coelho'
+        },
         {
           name: 'Crime and Punishment',
           author: 'Fyodor Dostoevsky'
@@ -100,16 +130,19 @@ export default {
           author: 'Robert Kiyosaki'
         },
         {
-          name: 'The Gulag Archipelago',
-          author: 'Aleksandr Solzhenitsyn'
-        },
-        {
           name: 'The Book of Joy',
           author: 'Desmond Tutu, 14th Dalai Lama'
         },
         {
           name: '5 Love Languages',
           author: 'Gary Chapman'
+        }
+      ],
+      haikus: [
+        {
+          verse_1: 'Haikus are quite fun,',
+          verse_2: 'they do not always make sense,',
+          verse_3: 'appendectomy.'
         }
       ]
     }

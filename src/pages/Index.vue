@@ -52,12 +52,12 @@
       <q-btn
         flat
         dense
-        label="Publications"
+        label="Projects"
         icon="book"
         class="q-px-sm"
-        :to="'/publications'"
+        :to="'/projects'"
       />
-      <q-btn
+      <!-- <q-btn
         flat
         dense
         type="a"
@@ -65,7 +65,7 @@
         target="__blank_resume"
         label="Resume"
         icon="account_box"
-      />
+      /> -->
     </div>
 
   </q-page>

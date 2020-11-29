@@ -97,16 +97,16 @@
           />
 
           <active-drawer-link
-            v-if="active == 'publications'"
-            link="/publications"
+            v-if="active == 'projects'"
+            link="/projects"
             icon="book"
-            label="Publications"
+            label="Projects"
           />
           <drawer-link
             v-else
-            link="/publications"
+            link="/projects"
             icon="book"
-            label="Publications"
+            label="Projects"
           />
 
         </q-list>

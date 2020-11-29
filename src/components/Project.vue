@@ -57,7 +57,7 @@
 
 <script>
 export default {
-  name: 'Publication',
+  name: 'Project',
   props: {
     img_file: {
       type: String,
