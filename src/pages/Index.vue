@@ -57,6 +57,14 @@
         class="q-px-sm"
         :to="'/projects'"
       />
+      <q-btn
+        flat
+        dense
+        label="Test Markdown"
+        icon="fruit"
+        class="q-px-sm"
+        :to="'/test-markdown'"
+      />
       <!-- <q-btn
         flat
         dense
@@ -66,6 +74,10 @@
         label="Resume"
         icon="account_box"
       /> -->
+    </div>
+
+    <div>
+      
     </div>
 
   </q-page>

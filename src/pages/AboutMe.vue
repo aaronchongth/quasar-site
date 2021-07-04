@@ -7,17 +7,14 @@
 
     <div>
       <div
-        class="q-pa-xl text-h4 text-center">
+        class="q-pa-lg text-h4">
         About Me
       </div>
 
-      <div
-        class="q-pa-md text-subtitle1 text-center">
-        Hello there! My name is Aaron, and I am a software engineer at the <span><a href="https://www.openrobotics.org/">Open Source Robotics Foundation</a></span>.</br>
-        I am very fond of topics in math, computer science, machine learning & vision, especially in the field of robotics.</br>
-        In my free time, I like to build and learn new things, read books, climb, or play volleyball.</br>
-        Right now, I am having fun with the <span><a href="https://quasar.dev/">Quasar Framework</a></span>.
-      </div>
+      <q-markdown
+        :src="AboutMe"
+        class="q-pa-lg"
+      />
 
       <div 
         class="row inline">
@@ -99,13 +96,12 @@
 </template>
 
 <script>
+import AboutMe from '../markdown/AboutMe.md'
 export default {
-  name: 'Publications',
+  name: 'About Me',
   data() {
     return {
-      variable_stiffness_expanded: false,
-      stiffness_modulator_expanded: false,
-      analytical_design_expanded: false,
+      AboutMe: AboutMe,
       current_reading:  [
         {
           name: '12 Rules for Life',
