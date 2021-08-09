@@ -12,28 +12,10 @@
         <q-avatar
           v-model="home"
           size="250px">
-          <img src="~assets/drinks.jpg">
+          <img src="https://raw.githubusercontent.com/aaronchongth/quasar-site/assets/drinks.jpg">
         </q-avatar>
       </div>
     </div>
-
-    <div class="col sm">
-      <div class="float-right q-ml-lg">
-        <q-avatar
-          v-model="home"
-          size="150px">
-          <img src="~assets/drinks.jpg">
-        </q-avatar>
-      </div>
-
-      <q-markdown
-        class="q-ma-lg"
-        :src="markdown"
-        toc
-        @data="onToc"
-      />
-    </div>
-
   </q-page>
 </template>
 
