@@ -14,7 +14,8 @@
     "quasar": "^1.0.0"
   },
   "devDependencies": {
-    "@quasar/app": "^2.2.6"
+    "@quasar/app": "^2.2.6",
+    "@quasar/quasar-app-extension-qmarkdown": "^1.4.3"
   },
   "browserslist": [
     "last 10 Chrome versions",

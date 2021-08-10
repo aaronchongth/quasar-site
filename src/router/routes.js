@@ -4,9 +4,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/', component: () => import('pages/Index.vue') },
-      { path: '/about-me', component: () => import('pages/AboutMe.vue') },
-      { path: '/projects', component: () => import('pages/Projects.vue') }
+      { path: '/', component: () => import('pages/home.vue') },
+      { path: '/about', component: () => import('pages/about.vue') }
     ]
   },
 
@@ -14,7 +13,7 @@ const routes = [
   // but you can also remove it
   {
     path: '*',
-    component: () => import('pages/Error404.vue')
+    component: () => import('pages/error_404.vue')
   }
 ]
 

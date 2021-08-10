@@ -3,12 +3,8 @@
   <q-card
     flat
     bordered
-    class="q-pa-md q-ma-sm col-12 col-lg-5"
+    class="q-pa-lg q-ma-sm col-12 col-lg-5"
   >
-    <img 
-      :src="resolve_img_url(img_file)"
-    >
-
     <q-card-section>
       <div class="text-h6">
         {{ title }}
@@ -18,20 +14,11 @@
       </div>
     </q-card-section>
 
-    <div class="text-caption text-dark q-px-md">
-      {{ short_abstract }}
-    </div>
+    <img 
+      :src="resolve_img_url(img_name)"
+    >
 
     <q-card-actions>
-      <q-btn 
-        flat color="dark" 
-        icon="open_in_new" 
-        label="link"
-        type="a"
-        :href="link"
-        target="__blank"
-      />
-      <q-space />
       <q-btn
         color="dark"
         round
@@ -42,14 +29,18 @@
       />
     </q-card-actions>
 
-    <q-slide-transition>
-      <div v-show="expanded">
-        <q-separator />
-        <q-card-section class="text-subitle2">
-          {{ abstract}}
-        </q-card-section>
-      </div>
-    </q-slide-transition>
+    <q-dialog v-model="expanded">
+      <q-card
+        style="width: 800px; max-width: 80vw;"
+      >
+        <q-markdown
+          class="q-ma-xl col"
+          :src="markdown"
+          toc
+          @data="onToc"
+        />
+      </q-card>
+    </q-dialog>
 
   </q-card>
 
@@ -57,9 +48,9 @@
 
 <script>
 export default {
-  name: 'Project',
+  name: 'project',
   props: {
-    img_file: {
+    img_name: {
       type: String,
       required: true
     },
@@ -71,15 +62,7 @@ export default {
       type: String,
       required: true
     },
-    short_abstract: {
-      type: String,
-      required: true
-    },
-    link: {
-      type: String,
-      required: true
-    },
-    abstract: {
+    markdown: {
       type: String,
       required: true
     }
@@ -91,9 +74,9 @@ export default {
   },
   methods: {
     resolve_img_url: function (path) {
-      let images = require.context('../assets/', false, /\.png$|\.jpg$/)
-      return images("./"+path)
+      return 'https://raw.githubusercontent.com/aaronchongth/quasar-site/assets/' + path
     }
   }
 }
+
 </script>
