@@ -21,15 +21,12 @@
           exact
           dense
         />
-        <q-route-tab
-          icon="face"
-          label="Markdown"
-          to="/markdown"
-          exact
-          dense
-        />
 
         <q-space />
+
+        <div class="dense q-px-md text-weight-medium">
+          aaronchong.dev
+        </div>
 
         <q-btn
           flat
