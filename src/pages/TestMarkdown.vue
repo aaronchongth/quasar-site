@@ -1,24 +1,31 @@
 <template>
-  <q-page class="container">
-    <div class="row gt-sm">
+  <div class="q-pa-md q-gutter-sm">
+    <q-btn label="Alert" color="primary" @click="alert = true" />
+
+    <q-dialog v-model="alert">
+      <q-card style="width: 1000px; max-width: 80vw;">
       <q-markdown
         class="q-ma-xl col"
-        :src="markdown"
+        :src="testmd"
         toc
         @data="onToc"
       />
-    </div>
-  </q-page>
+      </q-card>
+    </q-dialog>
+
+  </div>
+
 </template>
 
 <script>
-import markdown from '../markdown/analytical_design.md'
+import testmd from '../markdown/analytical_design.md'
 export default {
-  name: 'test-markdown',
-  data () {
+  data() {
     return {
-      markdown: markdown,
+      testmd: testmd,
+      alert: false,
     }
-  },
+  }
 }
+
 </script>

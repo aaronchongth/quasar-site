@@ -1,6 +1,7 @@
 # Analytical conditions for the design of variable stiffness mechanisms
+## 2017 - IEEE ICRA
 
-## [2017 - IEEE ICRA](https://ieeexplore.ieee.org/document/7989147)
+[Link to paper](https://ieeexplore.ieee.org/document/7989147)
 
 ![](https://raw.githubusercontent.com/aaronchongth/quasar-site/assets/analytical_design.jpg)
 
